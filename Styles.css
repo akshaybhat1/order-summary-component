@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
+    background-color: var(--pale-blue);
+    background-size:contain;
+}
+.card{
+    width:450px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero img{
+    width:100%;
+}
+.container{
+    text-align: center;
+    
+}
+.container h1{
+    margin:40px 30px 0px;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+.container p{
+    font-size: 16px;
+    font-weight:500;
+    color:var(--desaturated-blue);
+    line-height: 1.5em;
+    word-spacing:0.01em;
+    margin:0 30px 20px;
+    padding:10px 30px;   
+}
+.musicplan{
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    margin:0 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.imageicon{
+    padding:20px 2px 0px 5px;
+}
+.annualplan{
+    padding:20px 15px 0px 0px;
+}
+.annualplan p{
+    margin-bottom: 0;
+    padding-top: 5px;;
+    padding-left:0;
+    /* font-size: 16px;; */
+}
+a{
+    padding:35px 20px 0px;
+    font-weight: 500;
+    color:var(--bright-blue);
+}
+.buttons{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.proceed{
+    margin:20px 30px 10px 30px;
+    width:inherit;
+    padding:15px;
+    border: none;
+    background-color: var(--bright-blue);
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Red Hat Display', sans-serif;;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.cancel{
+    border:none;
+    background-color: white;
+    margin-bottom:30px;
+    color:var(--desaturated-blue);
+    font-weight: 700;
+}
+.cancel:hover{
+    color:var(--dark-blue);
+    font-weight: 900;
+}
+.proceed:hover{
+    opacity: 0.7;
+    font-weight: 900;
+}
+a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
